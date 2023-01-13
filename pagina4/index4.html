@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .main-section {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "advert"
+        "content"
+        "footer";
+}
+
+@media (min-width: 300px) {
+    .main-section {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "advert header"
+            "advert content"
+            "advert footer";
+    }
+}
+
+@media (min-width: 400px) {
+    .main-section {
+        grid-template-areas:
+            /* Cambia solo el código debajo de esta línea */
+            "header header"
+            "advert content"
+            "footer footer";
+        /* Cambia solo el código encima de esta línea */
+    }
+}
+</style>
+<body>
+    <Header>Build a Technical Documentation Page</Header>
+    <main id="main-doc">
+        <section class="main-section" id="section_1">
+            <header>Section 1</header>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </section>
+        <section class="main-section" id="section_2">
+            <header>Section 2</header>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </section>
+        <section class="main-section" id="section_3">
+            <header>Section 3</header>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </section>
+        <section class="main-section" id="section_4">
+            <header>Section 4</header>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </section>
+        <section class="main-section" id="section_5">
+            <header>Section 5</header>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <code></code>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </section>
+    </main>
+    <div>
+        <nav id="navbar">
+            <header>barra de navegacion</header>
+            <figure>
+                <a href="#section_1" class="nav-link">Section 1</a>
+                <a href="#section_2" class="nav-link">Section 2</a>
+                <a href="#section_3" class="nav-link">Section 3</a>
+                <a href="#section_4" class="nav-link">Section 4</a>
+                <a href="#section_5" class="nav-link">Section 5</a>
+            </figure>
+        </nav>
+    </div>
+    
+</body>
+</html>

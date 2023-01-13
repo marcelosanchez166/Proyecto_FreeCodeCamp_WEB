@@ -1,0 +1,133 @@
+body {
+    text-align: center;
+    align-items: center;
+    text-justify: unset;
+    margin: auto;
+    background-color: rgb(5, 45, 45, 0.1);
+    width:100vw;
+
+}
+
+#image {
+    /* max-width: 100%;
+    height: auto;
+    display: block;    
+    margin: auto; */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    display:flex;
+}
+
+#img-div {
+    background-color: rgb(249, 251, 253);
+    padding-top: 1%;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+img {
+    flex-direction: center;
+
+}
+
+.titulo_pagina {
+    background-color: antiquewhite;
+}
+
+#title {
+    padding-top: 1%;
+    font-style: unset;
+    font-size: 300%;
+}
+
+h4 {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-style: inherit;
+}
+
+#img-caption {
+    text-align: center;
+}
+
+.texto_imagen {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#tribute-info {
+    margin: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.eventos {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+    display: block;
+    padding-left: 5%;
+    /* list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; */
+}
+
+
+.testimonio {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    padding-left: 5%;
+
+}
+
+/* .testimonio{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+} */
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media (min-width: 300px) {
+    #main {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "advert header"
+            "advert content"
+            "advert footer";
+    }
+}
+
+@media (max-height: 800px) {
+    p {
+        font-size: 10px
+    }
+}
+

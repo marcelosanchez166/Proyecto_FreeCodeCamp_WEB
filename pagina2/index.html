@@ -1,0 +1,170 @@
+<!-- Objetivo: crear una aplicación que sea funcionalmente similar a https://survey-form.freecodecamp.rocks
+
+Historias de usuarios:
+
+Debe tener un título de página en un elemento h1 con una identificación de título
+Debe tener una breve explicación en un elemento p con una identificación de descripción
+Debe tener un elemento de formulario con una identificación de formulario de encuesta
+Dentro del elemento de formulario, debe ingresar su nombre en un campo de entrada que tiene una identificación de nombre y
+un tipo de texto
+Dentro del elemento de formulario, debe ingresar su correo electrónico en un campo de entrada que tiene una identificación de 
+correo electrónico
+Si ingresa un correo electrónico que no tiene el formato correcto, verá un error de validación de HTML5
+Dentro del formulario, puede ingresar un número en un campo de entrada que tiene una identificación de número
+Si ingresa números que no son números en la entrada de números, verá un error de validación de HTML5
+Si ingresa números fuera del rango de la entrada de números, que están definidos por los atributos mínimo y máximo, verá un 
+error de validación de HTML5
+Para los campos de entrada de nombre, correo electrónico y número, puede ver los elementos de etiqueta correspondientes en el formulario, 
+que describen el propósito de cada campo con las siguientes identificaciones: id="name-label", id="email-label" y id="número-etiqueta"
+Para los campos de entrada de nombre, correo electrónico y número, puede ver un texto de marcador de posición que brinda una descripción o 
+instrucciones para cada campo
+Dentro del elemento de formulario, debe tener un elemento desplegable de selección con una identificación de menú desplegable y al menos dos 
+opciones para elegir
+Dentro del elemento de formulario, puede seleccionar una opción de un grupo de al menos dos botones de radio que se agrupan usando el atributo 
+de nombre
+Dentro del elemento de formulario, puede seleccionar varios campos de una serie de casillas de verificación, cada una de las cuales debe tener 
+un atributo de valor
+Dentro del elemento de formulario, se le presenta un área de texto para comentarios adicionales
+Dentro del elemento de formulario, se le presenta un botón con id de envío para enviar todas las entradas
+Complete las historias de usuario y pase todas las pruebas a continuación para completar este proyecto. Dale tu propio estilo personal. 
+¡Feliz codificación! -->
+
+<!-- You should have an h1 element with an id of title
+Your #title should not be empty
+You should have a p element with an id of description
+Your #description should not be empty
+You should have a form element with an id of survey-form
+You should have an input element with an id of name
+Your #name should have a type of text
+Your #name should require input
+Your #name should be a descedant of #survey-form
+You should have an input element with an id of email
+Your #email should have a type of email
+Your #email should require input
+Your #email should be a descedant of #survey-form
+You should have an input element with an id of number
+Your #number should be a descedant of #survey-form
+Your #number should have a type of number
+Your #number should have a min attribute with a numeric value
+Your #number should have a max attribute with a numeric value
+You should have a label element with an id of name-label
+You should have a label element with an id of email-label
+You should have a label element with an id of number-label
+Your #name-label should not be empty
+Your #email-label should not be empty
+Your #number-label should not be empty
+Your #name-label should be a descedant of #survey-form
+Your #email-label should be a descedant of #survey-form
+Your #number-label should be a descedant of #survey-form
+Your #name should have a placeholder attribute and value
+Your #email should have a placeholder attribute and value
+Your #number should have a placeholder attribute and value
+You should have a select field with an id of dropdown
+Your #dropdown should have at least two selectable (not disabled) option elements
+Your #dropdown should be a descendant of #survey-form
+You should have at least two input elements with a type of radio (radio buttons)
+You should have at least two radio buttons that are descendants of #survey-form
+All your radio buttons should have a value attribute and value
+All your radio buttons should have a name attribute and value
+Every radio button group should have at least 2 radio buttons
+You should have at least two input elements with a type of checkbox (checkboxes) that are descendants of #survey-form
+All your checkboxes inside #survey-form should have a value attribute and value
+You should have at least one textarea element that is a descendant of #survey-form
+You should have an input or button element with an id of submit
+Your #submit should have a type of submit
+Your #submit should be a descendant of #survey-form -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <h3>Thank you for taking the time to help us improve the platform</h3>
+        <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dicta obcaecati fugiat quos?
+            Praesentium odit distinctio quaerat iure doloremque nemo, suscipit magni placeat ipsum voluptate natus
+            minima
+            dolor neque incidunt!
+        </p>
+    </header>
+    <div class="formulario">
+        <form action="" id="survey-form">
+            <div class="formulario">
+                <label for="name" id="name-label">Nombre: <input type="text" name="name" id="name"
+                        placeholder="Enter your name" required></label><br><br>
+            </div>
+            <div class="formulario">
+                <label for="email" id="email-label">Correo: <input type="email" name="email" id="email"
+                        placeholder="Enter your Email" required></label><br><br>
+            </div>
+            <div class="formulario">
+                <label for="Edad" id="Edad-label">Edad: <input type="Edad" name="Edad" id="Edad" min="1" max="99"
+                        placeholder="1" required></label><br><br>
+            </div>
+            <div class="formulario">
+                <!-- #value="Edad-label" atrbuto que sirve para que aparezca texto en el input-->
+                <label for="dropdown">Selector de Vehiculos
+                    <select name="cars" id="dropdown">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Hiunday">Hiunday</option>
+                    </select>
+                </label>
+            </div>
+            <br>
+            <br>
+            <div class="formulario">
+                <section class="genero">
+                    <label>Seleccione su genero: </label>
+                    <br>
+                    <label for="one"><input type="radio" name="indoor-outdoor" id="one" value="one"> Masculino</label>
+                    <br>
+                    <label for="two"><input type="radio" name="indoor-outdoor" id="two" value="two"> Femenino</label>
+                </section>
+            </div>
+            <br>
+            <div class="Helados">
+                <label>Seleccione sus helados favoritos: </label>
+                <br>
+                <label for="chocolate"><input type="checkbox" name="chocolate" id="chocolate"
+                        value="1">chocolate</label>
+                <br>
+                <label for="vainilla"><input type="checkbox" name="vainilla" id="vainilla" value="2">vainilla</label>
+                <br>
+                <label for="fresa"><input type="checkbox" name="fresa" id="fresa" value="3"> fresa</label>
+                <br>
+                <label for="Pistacho"><input type="checkbox" name="Pistacho" id="Pistacho" value="3"> Pistacho</label>
+                <br>
+                <label for="Limon"><input type="checkbox" name="Limon" id="Limon" value="3"> Limon</label>
+                <br>
+                <label for="Mango"><input type="checkbox" name="Mango" id="fresa" value="3"> Mango</label>
+                <br>
+                <label for="Mora"><input type="checkbox" name="Mora" id="Mora" value="3"> Mora</label>
+                <br>
+                <label for="Caramelo"><input type="checkbox" name="Caramelo" id="Caramelo" value="3"> Caramelo</label>
+                <br>
+                <label for="Maracuya"><input type="checkbox" name="Maracuya" id="Maracuya" value="3"> Maracuya</label>
+                <br>
+            </div>
+            <p>Algun comentario o sugerencia</p>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+                placeholder="Ingrese sus comentarios"></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>

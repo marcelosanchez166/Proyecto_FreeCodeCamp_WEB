@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #header {
+        display: flex;
+    }
+    .body{
+        background-color: beige;
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        text-align: center;
+        
+    }
+    #header-img{
+        width: 100px;
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        border-radius: 50%;
+        align-items:end;
+    }
+    @media (max-width: 100px) { 
+        #body{
+            font-size:10px
+            }
+            }
+</style>
+
+<body class="body">
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li ><a class="nav-link" href="#header">Home</a></li>
+                <li ><a class="nav-link" href="#body">articulos</a></li>
+                <li ><a class="nav-link" href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="logotipo "
+            id="header-img">
+    </header>
+    <div id="body">
+        <section class="video">
+            <video src="v1.mp4" width="640" height="480" id="video">Harry Styles - Sign of the Times </video>
+        </section>
+        <div>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <label for="email">Correo:<input type="email" name="email" id="email" placeholder="correo"></label>
+                <input type="submit" value="enviar" id="submit">
+            </form>
+        </div><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat delectus exercitationem architecto voluptas
+            mollitia quasi facilis itaque. Neque qui praesentium, quod saepe tempora quaerat aperiam dolor maiores.
+            Quidem, quae deleniti.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus perspiciatis reiciendis delectus
+            debitis aliquam dolorem, magnam natus beatae eum fugiat temporibus accusantium quibusdam, architecto, nihil
+            omnis quae ipsum nesciunt.</p>
+    </div>
+    <figure>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis dolores itaque libero, corrupti possimus,
+        repudiandae sit ullam id quaerat quasi amet ad explicabo ab quidem. Sint vel aspernatur a!
+    </figure>
+</body>
+<footer id="footer">copy right</footer>
+</html>

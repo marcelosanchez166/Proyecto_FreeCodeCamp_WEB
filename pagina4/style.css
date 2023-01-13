@@ -1,0 +1,37 @@
+.main-section {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "advert"
+        "content"
+        "footer";
+}
+
+@media (min-width: 300px) {
+    .main-section {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "advert header"
+            "advert content"
+            "advert footer";
+    }
+}
+
+@media (min-width: 400px) {
+    .main-section {
+        grid-template-areas:
+            /* Cambia solo el código debajo de esta línea */
+            "header header"
+            "advert content"
+            "footer footer";
+        /* Cambia solo el código encima de esta línea */
+    }
+}
